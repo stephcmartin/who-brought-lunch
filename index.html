@@ -50,11 +50,26 @@
       </div>
   </section>
 </div>
-  <div class="voting">
-    <button type="button" name="button" onclick="yes()">Yes. Me is wicked smart cookie!</button>
-    <button type="button" name="button" onclick="no()">No one loves me.</button>
+
+<form id="form" class="voting col-md-12" action="index.html" method="post">
+  <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+<br>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="yes">
+  <label class="form-check-label" for="yes">
+      <p>Yes I Did! I'm Wicked Smarht.</p>
+    </label>
   </div>
-  </div>  
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="no">
+    <label class="form-check-label" for="no">
+      <p>Doh! I guess I'm going out to eat.</p>
+    </label>
+  </div>
+  <br>
+<button type="submit" class="btn btn-primary" value="Submit" onClick="submit">Submit</button>
+</form>
+  </div>
 </body>
 <script type="text/javascript" src="index.js">
 </script>
